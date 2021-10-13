@@ -8,7 +8,9 @@ Persona::Persona(string _nome, string _cognome, int _eta){
     eta = _eta;
     cout << "✅ Creata Persona\t" << nome << endl;
 };
-Persona::~Persona(){cout << "❌ Distrutta Persona\t" << nome << endl;};
+Persona::~Persona(){
+    cout << "❌ Distrutta Persona\t" << nome << endl;
+};
     
 ostream& operator <<(ostream& os,const Persona& p){
     return os << p.nome << " " << p.cognome << " " << p.eta;
