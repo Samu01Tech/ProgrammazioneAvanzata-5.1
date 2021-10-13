@@ -15,10 +15,21 @@ int main() {
     // pp->stampa();
     // cout << *pp << endl;
     // delete pp;
-    Studente* ss = NULL;
-    ss = new Studente("Nome", "Cognome", 25018, 2, 18);
-    ss->stampa();
-    cout << *ss << endl;
-    delete ss;
+    // Studente* ss = NULL;
+    // ss = new Studente("Nome", "Cognome", 25018, 2, 18);
+    // ss->stampa();
+    // cout << *ss << endl;
+    // delete ss;
+    int scelta = 1;
+    Persona* pp;
+
+    if(scelta==1){
+        pp = new Studente("Anna", "Verdi", 25018, 2, 18);
+    } else {
+        //pp = new Docente("Luca", "Rossi", 2)
+    }
+    pp->stampa();
+    cout << *pp << endl;
+    delete pp;
     return 0;
 }

@@ -12,6 +12,7 @@ class Studente: public Persona{
     ~Studente();
     void stampa() const;
     friend ostream& operator <<(ostream& os,const Studente& p);
+    ostream& stampaoper(ostream& os) const;
 };
 ostream& operator <<(ostream& os,const Studente& p);
 #endif

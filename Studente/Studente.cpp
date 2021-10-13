@@ -17,5 +17,10 @@ void Studente::stampa() const{
     cout << "-----" << endl;
 };
 ostream& operator <<(ostream& os,const Studente& p){
-    return os << p.nome << " " << p.cognome << " " << p.eta << " Mat:" << p.matricola << " Ex:" << p.esami;
+    //return os << p.nome << " " << p.cognome << " " << p.eta << " Mat:" << p.matricola << " Ex:" << p.esami;
+    return p.stampaoper(os);
+};
+
+ostream& Studente::stampaoper(ostream& os) const{
+    return os << nome << " " << cognome << " " << eta << " Mat:" << matricola << " Ex:" << esami;
 };

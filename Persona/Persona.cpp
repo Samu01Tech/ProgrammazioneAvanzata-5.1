@@ -13,9 +13,14 @@ Persona::~Persona(){
 };
     
 ostream& operator <<(ostream& os,const Persona& p){
-    return os << p.nome << " " << p.cognome << " " << p.eta;
+    //return os << p.nome << " " << p.cognome << " " << p.eta;
+    return p.stampaoper(os);
 };
 
 void Persona::stampa() const{
     cout << nome << " " << cognome << " " << eta << endl;
+};
+
+ostream& Persona::stampaoper(ostream& os) const{
+    return os << nome << " " << cognome << " " << eta;
 };
